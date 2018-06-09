@@ -9,7 +9,7 @@ input.onPinPressed(TouchPin.P0, () => {
     basic.clearScreen()
     running = false
     false_start = false
-    basic.pause(Math.random(5) + Math.random(5))
+    basic.pause(1000 + Math.random(2000))
     if (!(false_start)) {
         start = input.runningTime()
         running = true
@@ -70,6 +70,3 @@ running = false
 false_start = false
 end = 0
 start = 0
-basic.forever(() => {
-	
-})
